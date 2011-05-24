@@ -9,6 +9,11 @@
  */
 package ch.nydi.j4edu.basic;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
+import java.util.Locale;
+
 /**
  * Play with java data types.
  * 
@@ -19,6 +24,8 @@ public class DataTypes {
 
     public static void main(String[] args) {
         tryPrimitives();
+        tryWrappers();
+        tryFormat();
     }
 
     /**
@@ -83,6 +90,72 @@ public class DataTypes {
         double anotherDouble = 2D;
         double doubleSum = oneDouble + anotherDouble;
         System.out.println(doubleSum);
+    }
+
+    /**
+     * Play with wrapper classes for primitive data types.
+     */
+    private static void tryWrappers() {
+
+        Integer oneInteger = new Integer(2);
+        Integer anotherInteger = 23; // autoboxing a primitive integer
+
+        Integer sumInteger = oneInteger + anotherInteger;
+        System.out.println(sumInteger);
+
+        // wrapper class feature example
+        System.out.println("max int value: " + Integer.MAX_VALUE);
+        System.out.println("min int value: " + Integer.MIN_VALUE);
+
+        String elevenString = "11";
+        Integer eleven = Integer.parseInt(elevenString);
+        System.out.println(eleven);
+
+        int twelve = 12;
+        String twelveString = Integer.toString(twelve);
+
+        System.out.println("Integers as Strings: " + elevenString + ", " + twelveString);
+        // but remember, each object has a toString method, they are implemented for most Java API classes
+        System.out.println("Integers as Integer Objects: " + eleven + ", " + twelve);
+
+        // There are wrapper classes for all primitive data types, play with it to learn the features
+        // Character has some nice methods, like
+        char a = 'a';
+        char nine = '9';
+
+        System.out.println("is " + a + " a digit: " + Character.isDigit(a));
+        System.out.println("is " + nine + " a digit: " + Character.isDigit(nine));
+    }
+
+    /**
+     * Try formating classes
+     */
+    private static void tryFormat() {
+        // example to parse a user input
+
+        String pricePerUnitInput = "430.35";
+        String amountInput = "3";
+
+        Double pricePerUnit = Double.parseDouble(pricePerUnitInput);
+        Integer amount = Integer.parseInt(amountInput);
+
+        Double total = pricePerUnit * amount;
+        System.out.println("Total: " + total); // well, it's not a nice output format
+
+        // so use printf
+        System.out.printf("Total wit printf: %5.2f", total);
+        System.out.println();
+
+        // or use NumberFormat
+        NumberFormat numberFormat = new DecimalFormat("####0.00");
+        System.out.println("Total with decimalformat: " + numberFormat.format(total));
+        // the grouping characters are not usual for your country?
+        numberFormat = new DecimalFormat("####0.00", new DecimalFormatSymbols(new Locale("de", "CH")));
+        System.out.println("Total with decimalformat and symbols: " + numberFormat.format(total));
+
+        // or use prepared DecimalFormat class for currency
+        NumberFormat currencyConverter = DecimalFormat.getCurrencyInstance(new Locale("de", "CH"));
+        System.out.println(currencyConverter.format(total));
     }
 
 }
