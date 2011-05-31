@@ -60,7 +60,7 @@ public class CallByValue {
         StringBuilder builder = new StringBuilder("My content will ");
         // the method call will take the original value
         callMethod(builder);
-        // Ausgabe: [doSomething]
+        // the builder content has changed
         System.out.println(builder);
     }
 
