@@ -25,29 +25,20 @@ public class SimplePerson1 {
     private String name;
     private final long instanciationTimeStamp = System.currentTimeMillis();
 
-    /**
-     * @param yearOfBirth
-     */
-    public void setYearOfBirth(Integer yearOfBirth) {
-        this.yearOfBirth = yearOfBirth;
-    }
-
     public Integer age() {
         // locale variable, scope = method
         Calendar now = new GregorianCalendar();
         return now.get(Calendar.YEAR) - yearOfBirth;
     }
 
-    /**
-     * @return name
-     */
+    public void setYearOfBirth(Integer yearOfBirth) {
+        this.yearOfBirth = yearOfBirth;
+    }
+
     public String getName() {
         return name;
     }
 
-    /**
-     * @param name
-     */
     public void setName(String name) {
         this.name = name;
     }

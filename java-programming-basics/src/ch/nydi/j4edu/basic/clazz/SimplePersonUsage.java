@@ -42,18 +42,22 @@ public class SimplePersonUsage {
 
         // all three object references are independent from each other in the stack space. They point to three reserved
         // memory spaces in the heap space.
-
     }
 
     private void trySimplePerson2() {
         SimplePerson2 p1 = new SimplePerson2(1978, "Werner Meier");
+        System.out.println("age of p1: " + p1.age());
         SimplePerson2 p2 = new SimplePerson2(1980, "Hans Muster");
+        System.out.println("age of p2: " + p2.age());
         SimplePerson2 p3 = new SimplePerson2(1973, "Erika Körner");
+        System.out.println("age of p3: " + p3.age());
         System.out.println(p1);
         System.out.println(p2);
         System.out.println(p3);
         // get the static instance counter, access via class reference
         System.out.println(SimplePerson2.instanceCounter);
+        // call the class method getInstanceCounter to get the class variable
+        System.out.println(SimplePerson2.getInstanceCounter());
     }
 
 }

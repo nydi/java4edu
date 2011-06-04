@@ -45,7 +45,7 @@ public class CallByValue {
         // the method call will take a copy of primitiveType variable value, the original value will not changed
         callMethod(primitiveType);
         // the value is just 100
-        System.out.println();
+        System.out.println(primitiveType);
     }
 
     private void callMethod(int x) {

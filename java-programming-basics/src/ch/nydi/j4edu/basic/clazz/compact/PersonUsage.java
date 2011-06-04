@@ -41,4 +41,5 @@ public class PersonUsage {
         // use the utility class PersonHelper to get the postal address
         System.out.println(PersonHelper.getPostalAddress(person));
     }
+
 }

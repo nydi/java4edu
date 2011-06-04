@@ -41,21 +41,30 @@ public class SimplePerson2 {
         instanceCounter++; // side note: this access is not thread save
     }
 
+    /**
+     * Instance methode to get the calculated age.
+     * 
+     * @return calculated age
+     */
     public Integer age() {
         // locale variable, scope = method
         Calendar now = new GregorianCalendar();
         return now.get(Calendar.YEAR) - yearOfBirth;
     }
 
-    /**
-     * @return name
-     */
     public String getName() {
         return name;
     }
 
     public long getPersonInstanceTime() {
         return System.currentTimeMillis() - instanciationTimeStamp;
+    }
+
+    public static int getInstanceCounter() {
+        // you can't access instance variables and instance methods in class
+        // methods, because no objects exists in this scope.
+        // int age = age();
+        return instanceCounter;
     }
 
     /**
