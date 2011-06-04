@@ -43,7 +43,7 @@ public final class PersonHelper {
             if (null != address.getStreet()) {
                 builder.append(address.getStreet()).append(NL);
             }
-            // Note: in reality this code is not robust, because i.e. zip and / or city can be null.
+            // Note: in reality this code is error prone, because i.e. zip and / or city can be null.
             // try what happens if zip and city are null.
             builder.append(address.getZip()).append(" ").append(address.getCity());
         }
