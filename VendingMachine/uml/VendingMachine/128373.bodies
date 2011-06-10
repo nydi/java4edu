@@ -1,0 +1,66 @@
+class Inventory
+!!!129013.java!!!	Inventory()
+		// initial fill inventory
+		
+		splints = new HashMap<String, Splint>();
+		
+		Splint splint = new Splint(3.40d);
+		for (int i = 0; i < 5; i++) {
+			splint.addProduct(new Product("cc", 3.40d));
+		}
+		splints.put("cc", splint);
+
+		splint = new Splint(2.80d);
+		for (int i = 0; i < 5; i++) {
+			splint.addProduct(new Product("dc", 2.80d));
+		}
+		splints.put("dc", splint);
+
+
+		splint = new Splint(4.10d);
+		for (int i = 0; i < 5; i++) {
+			splint.addProduct(new Product("fo", 4.10d));
+		}
+		splints.put("fo", splint);
+
+		splint = new Splint(3.10d);
+		for (int i = 0; i < 5; i++) {
+			splint.addProduct(new Product("pc", 3.10d));
+		}
+		splints.put("pc", splint);
+
+		splint = new Splint(2.90d);
+		for (int i = 0; i < 5; i++) {
+			splint.addProduct(new Product("pp", 2.90d));
+		}
+		splints.put("pp", splint);
+		
+!!!129141.java!!!	isProductAvaiabale(in name : String) : boolean
+		final Splint splint = splints.get(name);
+		
+		if(null == splint)
+			return false;
+		
+		return splint.hasProducts();
+		
+!!!129269.java!!!	getProductPrice(in name : String) : Double
+		final Splint splint = splints.get(name);
+		
+		if(null == splint)
+			return null;
+		
+		return splint.getPriceOfProductInSplint();
+!!!129397.java!!!	addProduct(in product : Product) : boolean
+		final Splint splint = splints.get(product.getName());
+		
+		if(null == splint)
+			return false;
+		
+		return splint.addProduct(product);
+!!!129525.java!!!	removeProduct(in name : String) : Product
+		final Splint splint = splints.get(name);
+		
+		if(null == splint)
+			return null;
+
+		return splint.removeProduct();

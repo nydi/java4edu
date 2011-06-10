@@ -1,0 +1,9 @@
+class Ejector
+!!!132341.java!!!	eject(in coins : Coin) : void
+		System.out.println("Klimper....");
+		for (final Coin coin : coins) {
+			System.out.println(coin.toString());
+		}
+!!!132469.java!!!	eject(in product : Product) : void
+		System.out.println("Holper....");
+		System.out.println(product.getName());

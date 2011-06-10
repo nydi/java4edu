@@ -1,0 +1,18 @@
+window_sizes 1532 950 208 1318 759 136
+diagrams
+  active  classdiagram_ref 128117 // VendingMachine
+    1086 845 99 4 0 0
+end
+show_stereotypes
+selected 
+package_ref 128117 // src
+open
+  classview_ref 128117 // vmachine1
+  classview_ref 128245 // model
+  deploymentview_ref 128245 // model
+  classview_ref 128373 // parts
+  deploymentview_ref 128501 // parts
+  classview_ref 128501 // money
+end
+end
+verbose

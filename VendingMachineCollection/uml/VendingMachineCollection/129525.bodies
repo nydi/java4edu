@@ -1,0 +1,23 @@
+class VendingMachineListener
+!!!133237.java!!!	VendingMachineListener(in vendingMachine : VendingMachine)
+		this.vendingMachine = vendingMachine;
+!!!133365.java!!!	startListener() : void
+		// listen to system.in and delegate commands to vending machine
+		final Scanner scanner = new Scanner(System.in);
+		
+		String input = null;
+		
+		while(!(input = scanner.nextLine()).equals("quit"))
+		{	
+			if((null == input) || (0 == input.length()))
+				continue;
+			
+			input = input.trim();
+			// if first char of input is a number, so we assume a coin where inserted
+			if(Character.isDigit(input.charAt(0)))
+				vendingMachine.insertCoin(Coin.parse(input));
+			else if("ej".equals(input))
+				vendingMachine.ejectCoinsInBuffer();
+			else // it must be a product choose
+				vendingMachine.chooseProduct(input);
+		}

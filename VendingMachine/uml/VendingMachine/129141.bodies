@@ -1,0 +1,8 @@
+class VendingMachineTester
+!!!128757.java!!!	main(in args : String) : void
+		final VendingMachineTester tester = new VendingMachineTester();
+		tester.startListener();
+!!!128885.java!!!	startListener() : void
+		final VendingMachine vendingMachine = new VendingMachine();
+		final VendingMachineListener listener = new VendingMachineListener(vendingMachine);
+		listener.startListener();

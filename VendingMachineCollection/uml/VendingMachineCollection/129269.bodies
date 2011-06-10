@@ -1,0 +1,25 @@
+class Splint
+!!!132597.java!!!	Splint(in productPrice : Double)
+		this.productPrice = productPrice;
+		// initial size
+		products = new ArrayList<Product>();
+!!!132725.java!!!	addProduct(in product : Product) : boolean
+		
+		if(5 > products.size())
+		{
+			products.add(product);
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+!!!132853.java!!!	removeProduct() : Product
+		if(!products.isEmpty())
+			return products.get(0);
+		
+		return null;
+!!!132981.java!!!	hasProducts() : boolean
+		return products.size() > 0;
+!!!133109.java!!!	getPriceOfProductInSplint() : Double
+		return productPrice;

@@ -1,0 +1,33 @@
+class CoinBuffer
+!!!131573.java!!!	CoinBuffer()
+		coins = new int[6];
+!!!131701.java!!!	getBufferdAmount() : Double
+		// summation of coins by valency and count
+		double amount = 0.0d;
+		for (final Coin coin : Coin.values()) {
+			amount = amount + (coins[coin.getValency()] * coin.getValue());
+		}
+		return amount;
+!!!131829.java!!!	addCoin(in coin : Coin) : void
+		coins[coin.getValency()]++;
+!!!131957.java!!!	flush() : Coin
+		int numberOfCoins = 0;
+		
+		for (int i = 0; i < coins.length; i++) {
+			numberOfCoins += coins[i];
+		}
+		
+		final Coin[] coinsOutOfBuffer = new Coin[numberOfCoins];
+		
+		// iterate over the coin values and fill the coinsOutOfBuffer array
+		int coinsOutOfBufferCounter = 0;
+		for (final Coin coin : Coin.values()) {
+			for (int i = 0; i < coins[coin.getValency()]; i++) {
+				coinsOutOfBuffer[coinsOutOfBufferCounter] = coin;
+				coinsOutOfBufferCounter++;
+			}
+		}
+		// reset coin buffer
+		coins = new int[6]; 
+
+		return coinsOutOfBuffer;
