@@ -1,7 +1,15 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine;
 
 import ch.nydi.j4edu.vmachine.parts.VendingMachineListener;
 
+/**
+ * @author Daniel Nydegger
+ */
 public class VendingMachineTester {
 
     public static void main(final String[] args) {

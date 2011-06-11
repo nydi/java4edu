@@ -1,5 +1,13 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine.money;
 
+/**
+ * @author Daniel Nydegger
+ */
 public enum Coin {
 
     RP_10(0.1d, 0), RP_20(0.2d, 1), RP_50(0.5d, 2), FR_1(1d, 3), FR_2(2d, 4), FR_5(5d, 5);

@@ -1,11 +1,7 @@
-/**
+/*
  * Java edcucation examples.
  *  
  * Source: https://github.com/nydi/java4edu
- *
- * FileName    : ClassUsage.java
- * Created on  : 27.05.2011
- * Created by  : Daniel Nydegger
  */
 package ch.nydi.j4edu.basic.clazz;
 
@@ -13,7 +9,6 @@ package ch.nydi.j4edu.basic.clazz;
  * Example for instanciate objects of a reference type
  * 
  * @author Daniel Nydegger
- * @date 27.05.2011
  */
 public class ClassUsage {
 

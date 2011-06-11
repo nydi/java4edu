@@ -1,9 +1,17 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine.model;
-
-import java.util.HashMap;
 
 import ch.nydi.j4edu.vmachine.parts.Splint;
 
+import java.util.HashMap;
+
+/**
+ * @author Daniel Nydegger
+ */
 public class Inventory {
 
     private final HashMap<String, Splint> splints;
@@ -48,7 +56,9 @@ public class Inventory {
     public boolean isProductAvaiabale(final String name) {
         final Splint splint = splints.get(name);
 
-        if (null == splint) return false;
+        if (null == splint) {
+            return false;
+        }
 
         return splint.hasProducts();
 
@@ -57,7 +67,9 @@ public class Inventory {
     public Double getProductPrice(final String name) {
         final Splint splint = splints.get(name);
 
-        if (null == splint) return null;
+        if (null == splint) {
+            return null;
+        }
 
         return splint.getPriceOfProductInSplint();
     }
@@ -65,7 +77,9 @@ public class Inventory {
     public boolean addProduct(final Product product) {
         final Splint splint = splints.get(product.getName());
 
-        if (null == splint) return false;
+        if (null == splint) {
+            return false;
+        }
 
         return splint.addProduct(product);
     }
@@ -73,7 +87,9 @@ public class Inventory {
     public Product removeProduct(final String name) {
         final Splint splint = splints.get(name);
 
-        if (null == splint) return null;
+        if (null == splint) {
+            return null;
+        }
 
         return splint.removeProduct();
     }

@@ -1,7 +1,15 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine.model;
 
 import ch.nydi.j4edu.vmachine.parts.Splint;
 
+/**
+ * @author Daniel Nydegger
+ */
 public class Inventory {
 
     private final Splint[] splints;

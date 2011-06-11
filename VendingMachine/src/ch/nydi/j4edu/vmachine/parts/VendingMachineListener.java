@@ -1,3 +1,8 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine.parts;
 
 import ch.nydi.j4edu.vmachine.VendingMachine;
@@ -5,6 +10,9 @@ import ch.nydi.j4edu.vmachine.money.Coin;
 
 import java.util.Scanner;
 
+/**
+ * @author Daniel Nydegger
+ */
 public class VendingMachineListener {
 
     private final VendingMachine vendingMachine;

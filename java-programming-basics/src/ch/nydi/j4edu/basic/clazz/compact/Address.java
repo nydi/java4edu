@@ -1,11 +1,7 @@
-/**
+/*
  * Java edcucation examples.
  *  
  * Source: https://github.com/nydi/java4edu
- *
- * FileName    : Address.java
- * Created on  : 31.05.2011
- * Created by  : Daniel Nydegger
  */
 package ch.nydi.j4edu.basic.clazz.compact;
 
@@ -13,7 +9,6 @@ package ch.nydi.j4edu.basic.clazz.compact;
  * An address of a person
  * 
  * @author Daniel Nydegger
- * @date 31.05.2011
  */
 public class Address {
 

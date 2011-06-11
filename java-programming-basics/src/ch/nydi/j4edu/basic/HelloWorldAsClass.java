@@ -1,11 +1,7 @@
-/**
+/*
  * Java edcucation examples.
  *  
  * Source: https://github.com/nydi/java4edu
- *
- * FileName    : HelloWorldAsClass.java
- * Created on  : 21.05.2011
- * Created by  : Daniel Nydegger
  */
 package ch.nydi.j4edu.basic;
 
@@ -13,7 +9,6 @@ package ch.nydi.j4edu.basic;
  * Hello World output separated in a class.
  * 
  * @author Daniel Nydegger
- * @date 21.05.2011
  */
 public class HelloWorldAsClass {
 

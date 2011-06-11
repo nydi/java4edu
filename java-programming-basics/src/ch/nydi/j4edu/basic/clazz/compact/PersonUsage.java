@@ -1,11 +1,7 @@
-/**
+/*
  * Java edcucation examples.
  *  
  * Source: https://github.com/nydi/java4edu
- *
- * FileName    : PersonUsage.java
- * Created on  : 31.05.2011
- * Created by  : Daniel Nydegger
  */
 package ch.nydi.j4edu.basic.clazz.compact;
 
@@ -13,7 +9,6 @@ package ch.nydi.j4edu.basic.clazz.compact;
  * Play with the Person and Address class and instances.
  * 
  * @author Daniel Nydegger
- * @date 31.05.2011
  */
 public class PersonUsage {
 

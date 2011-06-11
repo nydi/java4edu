@@ -1,9 +1,17 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine.parts;
-
-import java.util.ArrayList;
 
 import ch.nydi.j4edu.vmachine.model.Product;
 
+import java.util.ArrayList;
+
+/**
+ * @author Daniel Nydegger
+ */
 public class Splint {
 
     private final ArrayList<Product> products;
@@ -26,7 +34,9 @@ public class Splint {
     }
 
     public Product removeProduct() {
-        if (!products.isEmpty()) return products.get(0);
+        if (!products.isEmpty()) {
+            return products.get(0);
+        }
 
         return null;
     }

@@ -1,11 +1,7 @@
-/**
+/*
  * Java edcucation examples.
  *  
  * Source: https://github.com/nydi/java4edu
- *
- * FileName    : ControlStructures.java
- * Created on  : 23.05.2011
- * Created by  : Daniel Nydegger
  */
 package ch.nydi.j4edu.basic;
 
@@ -17,7 +13,6 @@ import java.util.Random;
  * TODO : Description
  * 
  * @author Daniel Nydegger
- * @date 23.05.2011
  */
 public class ControlStructures {
 
@@ -86,7 +81,8 @@ public class ControlStructures {
      * Use for-each loop to output a string array.
      */
     public void tryForEach() {
-        String[] someWords = new String[] { "Yes", "we", "can", "initalize", "and", "declare", "an", "array", "in", "one", "statment" };
+        String[] someWords =
+            new String[] { "Yes", "we", "can", "initalize", "and", "declare", "an", "array", "in", "one", "statment" };
         System.out.println();
         for (String word : someWords) {
             System.out.print(word + " ");

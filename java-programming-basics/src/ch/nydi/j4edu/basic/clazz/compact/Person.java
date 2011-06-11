@@ -1,11 +1,7 @@
-/**
+/*
  * Java edcucation examples.
  *  
  * Source: https://github.com/nydi/java4edu
- *
- * FileName    : Person.java
- * Created on  : 27.05.2011
- * Created by  : Daniel Nydegger
  */
 package ch.nydi.j4edu.basic.clazz.compact;
 
@@ -16,7 +12,6 @@ import java.util.GregorianCalendar;
  * Represents a simple person. It contains only person relevant data.
  * 
  * @author Daniel Nydegger
- * @date 27.05.2011
  */
 public class Person {
 

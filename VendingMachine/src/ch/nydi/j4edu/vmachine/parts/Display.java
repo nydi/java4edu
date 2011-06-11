@@ -1,5 +1,13 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine.parts;
 
+/**
+ * @author Daniel Nydegger
+ */
 public class Display {
 
     private static final String PROMPT = ">> : ";

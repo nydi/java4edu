@@ -1,11 +1,7 @@
-/**
+/*
  * Java edcucation examples.
  *  
  * Source: https://github.com/nydi/java4edu
- *
- * FileName    : DataTypes.java
- * Created on  : 21.05.2011
- * Created by  : Daniel Nydegger
  */
 package ch.nydi.j4edu.basic;
 
@@ -18,7 +14,6 @@ import java.util.Locale;
  * Play with java data types.
  * 
  * @author Daniel Nydegger
- * @date 21.05.2011
  */
 public class DataTypes {
 

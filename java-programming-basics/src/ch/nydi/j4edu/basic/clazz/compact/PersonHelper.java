@@ -1,11 +1,7 @@
-/**
+/*
  * Java edcucation examples.
  *  
  * Source: https://github.com/nydi/java4edu
- *
- * FileName    : PersonHelper.java
- * Created on  : 31.05.2011
- * Created by  : Daniel Nydegger
  */
 package ch.nydi.j4edu.basic.clazz.compact;
 
@@ -13,7 +9,6 @@ package ch.nydi.j4edu.basic.clazz.compact;
  * Support class to format person name and address.
  * 
  * @author Daniel Nydegger
- * @date 31.05.2011
  */
 public final class PersonHelper {
 

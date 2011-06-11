@@ -1,3 +1,8 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine;
 
 import ch.nydi.j4edu.vmachine.model.Inventory;
@@ -8,6 +13,9 @@ import ch.nydi.j4edu.vmachine.money.CoinBuffer;
 import ch.nydi.j4edu.vmachine.parts.Display;
 import ch.nydi.j4edu.vmachine.parts.Ejector;
 
+/**
+ * @author Daniel Nydegger
+ */
 public class VendingMachine {
 
     private final Inventory inventory;

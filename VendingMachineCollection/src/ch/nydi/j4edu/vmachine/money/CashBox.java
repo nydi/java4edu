@@ -1,5 +1,13 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine.money;
 
+/**
+ * @author Daniel Nydegger
+ */
 public class CashBox {
 
     /**
@@ -16,7 +24,9 @@ public class CashBox {
     }
 
     public Coin[] withdraw(Double amount) {
-        if (!canWithdraw(amount)) return null;
+        if (!canWithdraw(amount)) {
+            return null;
+        }
 
         // calculate coins to withdraw
         final int[] coinsToWithdraw = new int[6];
@@ -62,7 +72,9 @@ public class CashBox {
 
     public boolean canWithdraw(Double amount) {
         // check total amount
-        if (amount > getCashBoxAmount()) return false;
+        if (amount > getCashBoxAmount()) {
+            return false;
+        }
 
         // calculate amount of each coin value to pay the amount, after walktrough all coins
         // the amount should 0
@@ -73,7 +85,9 @@ public class CashBox {
         }
 
         // check amount < 0.05 to hook expected calculation errors caused by double data type
-        if (0.05d < Math.abs(amount)) return false;
+        if (0.05d < Math.abs(amount)) {
+            return false;
+        }
 
         return true;
     }
@@ -88,7 +102,9 @@ public class CashBox {
     private Double checkCoinSplitting(final Double amount, final Coin coin) {
         final int countOfCurrentCoin = numberOfCoins(coin, amount);
         // if one of the values is zero, so we can't pay with this coin value
-        if ((0 == countOfCurrentCoin) || (0 == coins[coin.getValency()])) return amount;
+        if ((0 == countOfCurrentCoin) || (0 == coins[coin.getValency()])) {
+            return amount;
+        }
 
         return amount % (Math.min(countOfCurrentCoin, coins[coin.getValency()]) * coin.getValue());
     }

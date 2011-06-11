@@ -1,3 +1,8 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine;
 
 import java.text.NumberFormat;
@@ -5,6 +10,8 @@ import java.util.Locale;
 
 /**
  * Helper class with static operations.
+ * 
+ * @author Daniel Nydegger
  */
 public final class Utils {
 

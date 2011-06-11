@@ -1,10 +1,18 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine.parts;
-
-import java.util.Scanner;
 
 import ch.nydi.j4edu.vmachine.VendingMachine;
 import ch.nydi.j4edu.vmachine.money.Coin;
 
+import java.util.Scanner;
+
+/**
+ * @author Daniel Nydegger
+ */
 public class VendingMachineListener {
 
     private final VendingMachine vendingMachine;
@@ -20,17 +28,20 @@ public class VendingMachineListener {
         String input = null;
 
         while (!(input = scanner.nextLine()).equals("quit")) {
-            if ((null == input) || (0 == input.length())) continue;
+            if ((null == input) || (0 == input.length())) {
+                continue;
+            }
 
             input = input.trim();
             // if first char of input is a number, so we assume a coin where inserted
-            if (Character.isDigit(input.charAt(0)))
+            if (Character.isDigit(input.charAt(0))) {
                 vendingMachine.insertCoin(Coin.parse(input));
-            else if ("ej".equals(input))
+            } else if ("ej".equals(input)) {
                 vendingMachine.ejectCoinsInBuffer();
-            else
+            } else {
                 // it must be a product choose
                 vendingMachine.chooseProduct(input);
+            }
         }
     }
 }

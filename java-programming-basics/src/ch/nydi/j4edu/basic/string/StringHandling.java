@@ -1,11 +1,7 @@
-/**
+/*
  * Java edcucation examples.
  *  
  * Source: https://github.com/nydi/java4edu
- *
- * FileName    : StringHandling.java
- * Created on  : 27.05.2011
- * Created by  : Daniel Nydegger
  */
 package ch.nydi.j4edu.basic.string;
 
@@ -13,7 +9,6 @@ package ch.nydi.j4edu.basic.string;
  * String and string handling examples.
  * 
  * @author Daniel Nydegger
- * @date 27.05.2011
  */
 public class StringHandling {
 

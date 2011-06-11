@@ -1,11 +1,7 @@
-/**
+/*
  * Java edcucation examples.
  *  
  * Source: https://github.com/nydi/java4edu
- *
- * FileName    : CallByValue.java
- * Created on  : 31.05.2011
- * Created by  : Daniel Nydegger
  */
 package ch.nydi.j4edu.basic.clazz;
 
@@ -26,7 +22,6 @@ package ch.nydi.j4edu.basic.clazz;
  * value.
  * 
  * @author Daniel Nydegger
- * @date 31.05.2011
  */
 public class CallByValue {
 

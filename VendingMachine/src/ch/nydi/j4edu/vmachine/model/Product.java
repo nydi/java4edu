@@ -1,5 +1,13 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine.model;
 
+/**
+ * @author Daniel Nydegger
+ */
 public class Product {
 
     private final String name;

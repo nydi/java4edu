@@ -1,8 +1,16 @@
+/*
+ * Java edcucation examples.
+ *  
+ * Source: https://github.com/nydi/java4edu
+ */
 package ch.nydi.j4edu.vmachine.parts;
 
 import ch.nydi.j4edu.vmachine.Utils;
 import ch.nydi.j4edu.vmachine.model.Product;
 
+/**
+ * @author Daniel Nydegger
+ */
 public class Splint {
 
     private final Product[] products;
