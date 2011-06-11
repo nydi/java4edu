@@ -1,4 +1,0 @@
-class Utils
-!!!128117.java!!!	formatMoney(in amount : Double) : String
-		final NumberFormat numberFormat = NumberFormat.getCurrencyInstance(new Locale("de", "CH"));
-		return numberFormat.format(amount);

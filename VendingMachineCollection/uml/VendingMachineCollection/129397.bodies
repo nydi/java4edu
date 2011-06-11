@@ -1,8 +1,0 @@
-class Product
-!!!129653.java!!!	Product(in name : String, in price : Double)
-		this.name = name;
-		this.price = price;
-!!!129781.java!!!	getName() : String
-		return name;
-!!!129909.java!!!	getPrice() : Double
-		return price;
