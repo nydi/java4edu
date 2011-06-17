@@ -10,7 +10,7 @@ import java.util.GregorianCalendar;
 import java.util.Random;
 
 /**
- * TODO : Description
+ * Example code to learn different loop structures.
  * 
  * @author Daniel Nydegger
  */

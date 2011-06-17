@@ -35,7 +35,7 @@ public class Splint {
 
     public Product removeProduct() {
         if (!products.isEmpty()) {
-            return products.get(0);
+            return products.remove(0);
         }
 
         return null;
