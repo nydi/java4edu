@@ -103,7 +103,7 @@ public class Person
     public String toString() {
         StringBuffer buffer = new StringBuffer();
 
-        return buffer.append("Alter: ").append(alter).append(NL).append("Gr�sse: ").append(groesse).append(NL).append(
+        return buffer.append("Alter: ").append(alter).append(NL).append("Grösse: ").append(groesse).append(NL).append(
             "Gewicht: ").append(gewicht).append(NL).append("BMI: ").append(calculateBmi()).append(NL).append(NL).toString();
     }
 }

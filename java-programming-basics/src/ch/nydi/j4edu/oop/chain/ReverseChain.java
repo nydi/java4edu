@@ -12,19 +12,8 @@ import java.util.List;
 /**
  * @author Daniel Nydegger
  */
-public class ReverseChain
+public class ReverseChain extends SimpleChain
     implements ExecutionChain {
-
-    private final List<Executable> executionList;
-
-    public ReverseChain() {
-        executionList = new ArrayList<Executable>();
-    }
-
-    @Override
-    public void add(final Executable executable) {
-        executionList.add(executable);
-    }
 
     @Override
     public Object proceedChain(final Object input) {
@@ -38,5 +27,4 @@ public class ReverseChain
         }
         return result;
     }
-
 }

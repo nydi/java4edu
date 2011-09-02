@@ -12,13 +12,13 @@ public class TestChain {
 
     public static void main(String[] args) {
         final ExecutionChain chain = new SimpleChain();
-        ChainProcessor simpleChainProcessor = new SimpleChainProcessor(chain);
+        ExecutionProcessor simpleChainProcessor = new SimpleExecutionProcessor(chain);
         simpleChainProcessor.executeChain("-- input obj --", new ExecA(), new ExecB());
 
         System.out.println("------------------------------");
 
         final ExecutionChain reverseChain = new ReverseChain();
-        simpleChainProcessor = new SimpleChainProcessor(reverseChain);
+        simpleChainProcessor = new SimpleExecutionProcessor(reverseChain);
         simpleChainProcessor.executeChain("-- input obj --", new ExecA(), new ExecB());
     }
 }

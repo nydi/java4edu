@@ -10,5 +10,12 @@ package ch.nydi.j4edu.oop.chain;
  */
 public interface Executable {
 
-    public Object execute(Object object);
+    /**
+     * Executes something.
+     * 
+     * @param input
+     *            input object
+     * @return output output after execution
+     */
+    public Object execute(Object input);
 }

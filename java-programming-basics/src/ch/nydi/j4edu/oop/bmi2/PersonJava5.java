@@ -60,7 +60,7 @@ public class PersonJava5
      */
     @Override
     public int compareTo(PersonJava5 o) {
-        // instanceof Vergleich f�llt weg, cast f�llt weg
+        // instanceof Vergleich fällt weg, cast fällt weg
         final Double mybmi = this.calculateBmi(); // autoboxing
         final Double yourbmi = o.calculateBmi(); // autoboxing
         return mybmi.compareTo(yourbmi);
@@ -72,7 +72,7 @@ public class PersonJava5
     public String toString() {
         StringBuffer buffer = new StringBuffer();
 
-        return buffer.append("Alter: ").append(alter).append(NL).append("Gr�sse: ").append(groesse).append(NL).append(
+        return buffer.append("Alter: ").append(alter).append(NL).append("Grösse: ").append(groesse).append(NL).append(
             "Gewicht: ").append(gewicht).append(NL).append("BMI: ").append(calculateBmi()).append(NL).append(NL).toString();
     }
 

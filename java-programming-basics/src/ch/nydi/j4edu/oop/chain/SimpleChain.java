@@ -14,7 +14,7 @@ import java.util.List;
 public class SimpleChain
     implements ExecutionChain {
 
-    private final List<Executable> executionList;
+    protected final List<Executable> executionList;
 
     public SimpleChain() {
         executionList = new ArrayList<Executable>();
@@ -34,5 +34,4 @@ public class SimpleChain
 
         return result;
     }
-
 }
