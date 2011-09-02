@@ -8,21 +8,21 @@ package ch.nydi.j4edu.oop.chain;
 /**
  * @author Daniel Nydegger
  */
-public class SimpleChainProcessor
-    implements ChainProcessor {
+public class SimpleExecutionProcessor
+    implements ExecutionProcessor {
 
     private final ExecutionChain chain;
 
-    public SimpleChainProcessor(final ExecutionChain chain) {
+    public SimpleExecutionProcessor(final ExecutionChain chain) {
         this.chain = chain;
     }
 
     @Override
-    public void executeChain(final Object input, final Executable... executables) {
+    public Object executeChain(final Object input, final Executable... executables) {
         for (final Executable executable : executables) {
             chain.add(executable);
         }
 
-        chain.proceedChain(input);
+        return chain.proceedChain(input);
     }
 }

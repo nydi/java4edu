@@ -8,7 +8,16 @@ package ch.nydi.j4edu.oop.chain;
 /**
  * @author Daniel Nydegger
  */
-public interface ChainProcessor {
+public interface ExecutionProcessor {
 
-    public void executeChain(Object input, Executable... executables);
+    /**
+     * Configure an execution chain with executables and proceeds the chain with the given input.
+     * 
+     * @param input
+     *            input object
+     * @param executables
+     *            executables to proceed
+     * @return processed result
+     */
+    public Object executeChain(Object input, Executable... executables);
 }
