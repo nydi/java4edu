@@ -1,2 +1,9 @@
 Servers
 bin
+DatabaseBasic/.project
+
+DatabaseBasic/.classpath
+
+DatabaseBasic/.settings/
+
+target/
