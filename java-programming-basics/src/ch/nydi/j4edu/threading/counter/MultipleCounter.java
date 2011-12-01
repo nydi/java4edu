@@ -45,7 +45,7 @@ public class MultipleCounter {
         return protectedCounter;
     }
 
-    public synchronized int incrementThreadLocaleCounter() {
+    public int incrementThreadLocaleCounter() {
         threadSaveCounter.set(threadSaveCounter.get() + 1);
         doGreatThings();
         return threadSaveCounter.get();
